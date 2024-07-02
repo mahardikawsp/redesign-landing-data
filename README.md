@@ -1,4 +1,4 @@
-# Satu Data Banyuwangi
+# Frontend
 
 ## Setup
 
