@@ -1,0 +1,33 @@
+.h-login {
+  &-left {
+    background-color: var(--soft);
+    padding: 0;
+
+    @include screenLg {
+      padding-top: 1.5rem;
+      padding-left: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &-right {
+    background-color: var(--soft);
+    padding: 0;
+
+    @include screenLg {
+      background-color: var(--white);
+      padding-top: 1.5rem;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__forgot {
+    color: var(--blue);
+
+    &:hover,
+    &:active {
+      color: var(--blue-dark);
+    }
+  }
+}

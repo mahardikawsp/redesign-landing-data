@@ -1,0 +1,78 @@
+.h-input {
+  background-color: var(--white);
+  height: 48px;
+
+  &-search {
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0004 20.0004L15.9504 15.9504M15.9504 15.9504C16.6004 15.3003 17.116 14.5286 17.4678 13.6793C17.8196 12.83 18.0007 11.9197 18.0007 11.0004C18.0007 10.0811 17.8196 9.17076 17.4678 8.32144C17.116 7.47211 16.6004 6.7004 15.9504 6.05036C15.3003 5.40031 14.5286 4.88467 13.6793 4.53287C12.83 4.18107 11.9197 4 11.0004 4C10.0811 4 9.17076 4.18107 8.32144 4.53287C7.47211 4.88467 6.7004 5.40031 6.05036 6.05036C4.73754 7.36318 4 9.14375 4 11.0004C4 12.857 4.73754 14.6375 6.05036 15.9504C7.36318 17.2632 9.14375 18.0007 11.0004 18.0007C12.857 18.0007 14.6375 17.2632 15.9504 15.9504Z' stroke='%238A94A6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      no-repeat #fff;
+    background-position: 12px 17px;
+    padding-left: 2.75rem !important;
+    background-repeat: no-repeat;
+    border: 1px solid var(--blue);
+    border-radius: 0.875rem !important;
+    height: 55px;
+    position: relative;
+
+    &.rounded {
+      border: 1px solid var(--gray) !important;
+      border-radius: 2rem !important;
+    }
+
+    &__button {
+      border-radius: 10px;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+
+      &.rounded {
+        border-radius: 2rem !important;
+        min-width: auto;
+        width: 90px;
+      }
+
+      &.h-btn--xs {
+        top: 4px;
+      }
+    }
+
+    &--sm {
+      background-position: 12px 9px;
+      height: 40px;
+
+      &::placeholder {
+        font-size: 0.875rem;
+      }
+    }
+
+    &--md {
+      background-position: 12px 9px;
+      height: 44px;
+
+      &::placeholder {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &-password {
+    position: absolute;
+    top: 70%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.form-check {
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+  padding: 12px 12px 12px 34px;
+}
+
+.form-check-active {
+  background-color: var(--soft);
+  border: 1px solid var(--blue);
+  border-radius: 12px;
+  padding: 12px 12px 12px 34px;
+}

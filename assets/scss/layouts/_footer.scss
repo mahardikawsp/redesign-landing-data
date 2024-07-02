@@ -1,0 +1,39 @@
+.h-footer {
+  background-color: var(--dark);
+
+  &__wrapper {
+    padding: 2rem 1.5rem 0 1.5rem;
+
+    @include screenLg {
+      padding: 4rem 6rem 1rem 6rem;
+    }
+  }
+
+  &__link {
+    color: var(--white);
+    opacity: 0.5;
+
+    &:hover {
+      color: var(--white);
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    color: var(--white);
+    opacity: 0.5;
+  }
+
+  &__back-top {
+    color: var(--primary-100);
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+
+  &__divider {
+    border-top: 1px solid var(--white);
+    opacity: 0.25;
+  }
+}

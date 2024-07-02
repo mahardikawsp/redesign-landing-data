@@ -1,0 +1,63 @@
+.h-card-thumb {
+  @extend %card-helper;
+  border: 1px solid var(--gray-dark);
+  box-shadow: none;
+  max-height: 545px;
+  padding: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 8px 8px 2px 1px rgb(153, 194, 247, 0.8);
+  }
+
+  &__image {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    height: auto;
+    max-height: 320px;
+    object-fit: fill;
+    width: 100%;
+  }
+
+  &__title {
+    display: -webkit-box;
+    max-height: 100px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__button {
+    background: var(--soft);
+    border-radius: 0.5rem;
+    color: var(--blue);
+    font-weight: 600;
+    height: 3rem;
+    padding: 0.5rem;
+    width: 100%;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+  }
+
+  &__button-icon {
+    background: var(--soft);
+    border: 0;
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 0.5rem;
+    width: 3.5rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+  }
+}

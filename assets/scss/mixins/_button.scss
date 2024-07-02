@@ -1,0 +1,116 @@
+$button-array: (base #b3bbc6 #fff), (primary #3062e0 #fff), (secondary #eff5fe #3062e0), (danger #d73630 #d73630);
+
+@each $button in $button-array {
+  .h-btn--#{nth($button, 1)} {
+    background: #{nth($button, 2)};
+    box-shadow: 0px 1px 2px rgba(48, 98, 224, 0.3);
+    color: #{nth($button, 3)};
+    @extend %h-btn;
+
+    &.h-btn--rounded {
+      border-radius: 30px;
+    }
+
+    &.h-btn--icon {
+      align-items: center;
+      display: inline-flex;
+      gap: 0.75rem;
+    }
+
+    &.h-btn--fluid {
+      justify-content: center;
+      width: 100%;
+
+      @include screenLg {
+        width: auto;
+      }
+    }
+
+    @if nth($button, 1) == 'base' {
+      box-shadow: none;
+    }
+  }
+
+  .h-btn--#{nth($button, 1)}:hover {
+    background: darken(nth(nth($button, 2), 1), 5%);
+    color: #{nth($button, 3)};
+    text-decoration: none;
+  }
+
+  .h-btn--#{nth($button, 1)}:focus,
+  .h-btn--#{nth($button, 1)}:active {
+    background: darken(nth(nth($button, 2), 1), 20%);
+    border: 2px solid var(--clr-white);
+    box-shadow: 0 0 0 2px rgba(48, 98, 224, 0.5);
+    outline: none;
+    text-decoration: none;
+
+    @if nth($button, 1) == 'base' {
+      box-shadow: none;
+    }
+  }
+
+  .h-btn-outline--#{nth($button, 1)} {
+    color: #{nth($button, 2)};
+    background: transparent;
+    border: solid 1px #{nth($button, 2)};
+    @extend %h-btn-outline;
+
+    @if nth($button, 1) == 'base' {
+      border: solid 1px #{nth($button, 2)};
+      color: var(--text);
+    }
+
+    &.h-btn--rounded {
+      border-radius: 30px;
+    }
+
+    &.h-btn--icon {
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    &.h-btn--fluid {
+      justify-content: center;
+      width: 100%;
+
+      @include screenLg {
+        width: auto;
+      }
+    }
+  }
+
+  .h-btn-outline--#{nth($button, 1)}:hover {
+    background-color: var(--soft);
+    border: solid 1px #{darken(nth($button, 2), 20%)};
+    color: #{darken(nth($button, 2), 20%)};
+    text-decoration: none;
+
+    @if nth($button, 1) == 'base' {
+      border: solid 1px #{nth($button, 2)};
+      color: var(--text);
+    }
+  }
+
+  .h-btn-outline--#{nth($button, 1)}:focus,
+  .h-btn-outline--#{nth($button, 1)}:active {
+    background-color: var(--soft);
+    border: solid 1px #{darken(nth($button, 2), 20%)};
+    box-shadow: 0 0 0 2px rgba(48, 98, 224, 0.5);
+    color: #{darken(nth($button, 2), 20%)};
+    outline: none;
+    text-decoration: none;
+
+    @if nth($button, 1) == 'base' {
+      border: solid 1px #{nth($button, 2)};
+      color: var(--text);
+    }
+
+    @if nth($button, 1) == 'danger' {
+      background-color: var(--maroon-soft);
+      box-shadow: 0 0 0 2px rgba(215, 54, 48, 0.5);
+    }
+  }
+}

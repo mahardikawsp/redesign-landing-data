@@ -1,0 +1,17 @@
+.h-card-fly {
+  position: relative;
+  top: 0;
+
+  @include screenLg {
+    top: -15rem;
+  }
+
+  & > .h-card-fly-wrapper {
+    height: auto;
+
+    @include screenLg {
+      height: 80px;
+    }
+  }
+}
+

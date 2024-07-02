@@ -1,0 +1,48 @@
+.h-accordion-item {
+  border: 1px solid var(--dark) !important;
+  border-radius: 1rem !important;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.h-accordion-header {
+  border-radius: 1rem !important;
+}
+
+.h-accordion-body {
+  border-top: 1px solid var(--gray-dark);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 1rem;
+}
+
+.h-accordion-button {
+  &.collapsed {
+    border-radius: 1rem !important;
+  }
+  &:not(.collapsed) {
+    background: transparent;
+    box-shadow: none;
+  }
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 13.5381H13V18.5381C13 18.8033 12.8946 19.0577 12.7071 19.2452C12.5196 19.4327 12.2652 19.5381 12 19.5381C11.7348 19.5381 11.4804 19.4327 11.2929 19.2452C11.1054 19.0577 11 18.8033 11 18.5381V13.5381H6C5.73478 13.5381 5.48043 13.4327 5.29289 13.2452C5.10536 13.0577 5 12.8033 5 12.5381C5 12.2729 5.10536 12.0185 5.29289 11.831C5.48043 11.6434 5.73478 11.5381 6 11.5381H11V6.53809C11 6.27287 11.1054 6.01852 11.2929 5.83098C11.4804 5.64344 11.7348 5.53809 12 5.53809C12.2652 5.53809 12.5196 5.64344 12.7071 5.83098C12.8946 6.01852 13 6.27287 13 6.53809V11.5381H18C18.2652 11.5381 18.5196 11.6434 18.7071 11.831C18.8946 12.0185 19 12.2729 19 12.5381C19 12.8033 18.8946 13.0577 18.7071 13.2452C18.5196 13.4327 18.2652 13.5381 18 13.5381Z' fill='%234B5563'/%3E%3C/svg%3E%0A");
+    transform: translateY(-4px);
+    top: 20px !important;
+  }
+  &:not(.collapsed)::after {
+    content: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 13.5381H6C5.73478 13.5381 5.48043 13.4327 5.29289 13.2452C5.10536 13.0577 5 12.8033 5 12.5381C5 12.2729 5.10536 12.0185 5.29289 11.831C5.48043 11.6434 5.73478 11.5381 6 11.5381H18C18.2652 11.5381 18.5196 11.6434 18.7071 11.831C18.8946 12.0185 19 12.2729 19 12.5381C19 12.8033 18.8946 13.0577 18.7071 13.2452C18.5196 13.4327 18.2652 13.5381 18 13.5381Z' fill='%234B5563'/%3E%3C/svg%3E%0A");
+    transform: translate(-5px, -4px);
+    transform: rotate(0deg);
+  }
+}
+
+.h-accordion-button:not(.collapsed)::after,
+.h-accordion-button::after {
+  width: auto;
+  height: auto;
+  background-image: none;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  font-size: 24px;
+}

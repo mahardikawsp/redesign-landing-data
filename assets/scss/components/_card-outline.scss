@@ -1,0 +1,54 @@
+.h-card-outline {
+  border: 1px solid var(--gray-dark);
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  @include screenLg {
+    padding: 2rem;
+  }
+
+  &--overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 220px;
+
+    p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+
+      @supports (-webkit-line-clamp: 2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  &--slider {
+    box-shadow: 0px 4px 20px 1px #8b9ab733;
+  }
+
+  &--box {
+    height: auto;
+
+    @include screenLg {
+      height: 580px;
+    }
+  }
+
+  &--rectangle {
+    height: auto;
+
+    @include screenLg {
+      height: 300px;
+    }
+  }
+}

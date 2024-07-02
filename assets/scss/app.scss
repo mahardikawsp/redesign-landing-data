@@ -1,0 +1,89 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './mixins';
+@import './helpers';
+@import './layouts';
+@import './components';
+
+:root {
+  --white: #fff;
+  --soft: #eff5fe;
+  --gray: #d6d9e1;
+  --gray-soft: #f6f7f9;
+  --gray-dark: #b3bbc6;
+  --gray-darker: #2b3137;
+  --green: #009c6a;
+  --green-soft: #e6f4ef;
+  --maroon: #d73630;
+  --maroon-soft: #faf0f0;
+  --navy: #4950f3;
+  --navy-soft: #ededf7;
+  --brown: #8d6859;
+  --brown-soft: #f6f1ef;
+  --purple: #a642b7;
+  --purple-soft: #f7eff8;
+  --pink: #d44589;
+  --pink-soft: #f8f0f4;
+  --ivory: #f7941d;
+  --ivory-soft: #f8f3ed;
+  --forest: #22a5ad;
+  --forest-soft: #eaf4f5;
+  --red: #ff442b;
+  --yellow: #fed000;
+  --yellow-soft: #f7d694;
+  --blue: #3062e0;
+  --blue-dark: #2640a7;
+  --text: #0b0c0e;
+  --text-soft: #8a94a6;
+  --line: #1a2551;
+  --line-soft: #d6d9e1;
+  --dark: #0d101a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    font-family: $font-regular;
+    font-size: 1rem;
+    color: var(--text);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: $font-regular;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'OnestBold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    color: var(--text);
+    text-decoration: none;
+    outline: none;
+}
+
+input,
+textarea {
+  font-size: 0.875rem;
+
+  &::placeholder {
+    color: var(--gray-soft);
+    font-size: 0.875rem;
+  }
+}

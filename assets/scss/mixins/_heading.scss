@@ -1,0 +1,43 @@
+$heading: (
+  46: (
+    fs: clamp(2rem, 2.5vw, 2.875rem),
+    lh: normal,
+  ),
+  36: (
+    fs: clamp(1.5rem, 2.5vw, 2.25rem),
+    lh: normal,
+  ),
+  28: (
+    fs: clamp(1.5rem, 2.5vw, 1.75rem),
+    lh: 2.5rem,
+  ),
+  24: (
+    fs: 1.5rem,
+    lh: 2.25rem,
+  ),
+  18: (
+    fs: 1.125rem,
+    lh: 1.75rem,
+  ),
+  16: (
+    fs: 1rem,
+    lh: 1.5rem,
+  ),
+  14: (
+    fs: 0.875rem,
+    lh: 1.5rem,
+  ),
+);
+
+@mixin heading-variable($module) {
+  @each $name, $map in $module {
+    .h-text-heading-#{$name} {
+      font-size: map-get($map, fs);
+      font-weight: 700;
+      font-family: "OnestBold", sans-serif;
+      line-height: map-get($map, lh);
+    }
+  }
+}
+
+@include heading-variable($heading);

@@ -1,0 +1,29 @@
+.h-bg {
+  &-white {
+    background-color: var(--white);
+  }
+
+  &-soft {
+    background-color: var(--soft);
+  }
+
+  &-warning {
+    background-color: var(--yellow-soft);
+  }
+
+  &-gray {
+    background-color: var(--gray);
+  }
+
+  &-gray-soft {
+    background-color: var(--gray-soft);
+  }
+
+  &-dark {
+    background-color: var(--dark);
+  }
+
+  &-danger {
+    background-color: var(--red);
+  }
+}

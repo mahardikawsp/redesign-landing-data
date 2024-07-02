@@ -1,0 +1,39 @@
+$heading: (
+  24: (
+    fs: 1.5rem,
+    lh: 2.375rem,
+  ),
+  20: (
+    fs: 1.25rem,
+    lh: 2.125rem,
+  ),
+  18: (
+    fs: 1.125rem,
+    lh: 1.875rem,
+  ),
+  16: (
+    fs: 1rem,
+    lh: 1.625rem,
+  ),
+  14: (
+    fs: 0.875rem,
+    lh: 1.375rem,
+  ),
+  12: (
+    fs: 0.75rem,
+    lh: 1.125rem,
+  ),
+);
+
+@mixin body-variable($module) {
+  @each $name, $map in $module {
+    .h-text-body-#{$name} {
+      font-size: map-get($map, fs);
+      font-weight: 400;
+      font-family: "OnestRegular", sans-serif;
+      letter-spacing: map-get($map, ls);
+    }
+  }
+}
+
+@include body-variable($heading);

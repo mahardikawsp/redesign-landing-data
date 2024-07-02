@@ -1,0 +1,28 @@
+.h-card-filter {
+  border: 1px solid var(--gray-dark);
+  border-radius: 1rem;
+
+  &__wrapper {
+    padding: 1rem;
+  }
+
+  &__border {
+    border-bottom: 1px solid var(--gray-dark);
+  }
+
+  &__link {
+    color: var(--blue);
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: var(--blue);
+      text-decoration: none;
+    }
+  }
+
+  &__overflow {
+    overflow-y: scroll;
+    height: 300px;
+  }
+}

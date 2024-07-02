@@ -1,0 +1,41 @@
+%h-btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.688rem;
+  min-width: 6rem;
+  min-height: 2.5rem;
+  outline: none;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: max-content;
+}
+
+%h-btn-outline {
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.688rem;
+  min-width: 6rem;
+  min-height: 2.5rem;
+  outline: none;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: max-content;
+}
+
+.h-btn--xs {
+  border-radius: 0.5rem;
+  min-height: auto;
+  padding: 2px 12px;
+  height: 36px;
+}

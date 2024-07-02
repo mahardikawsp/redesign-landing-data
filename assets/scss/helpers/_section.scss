@@ -1,0 +1,115 @@
+.h-section {
+  padding: 3rem 1rem;
+  height: auto;
+
+  @include screenLg {
+    padding: 4rem 6rem;
+  }
+
+  &__floating {
+    padding-top: 14rem;
+
+    @include ipadLandscape {
+      padding-top: 10rem;
+    }
+
+    @include screenLg {
+      padding-top: 15rem;
+    }
+  }
+
+  &__floating-top {
+    position: relative;
+    top: -18rem;
+  }
+
+  &-faq {
+    display: none;
+
+    @include screenLg {
+      display: block;
+    }
+
+    &--icon-left {
+      position: absolute;
+      left: 0;
+      top: 18rem;
+    }
+
+    &--icon-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &-topik {
+    &--icon {
+      position: absolute;
+      left: 20%;
+      top: 1.25rem;
+    }
+  }
+
+  &-dataset {
+    &--icon-top {
+      position: absolute;
+      right: 7rem;
+      top: -15rem;
+    }
+
+    &--icon-left {
+      position: absolute;
+      left: -0.875rem;
+      top: -1.5rem;
+
+      @include screenLg {
+        left: -1.5rem;
+      }
+    }
+
+    &--icon-right {
+      position: absolute;
+
+      top: -1.5rem;
+      right: 30rem;
+    }
+  }
+
+  &-open-data {
+    &--icon-line {
+      position: absolute;
+      top: 150%;
+      left: 20%;
+    }
+    &--icon-blue {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+    }
+
+    &--icon-orange {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--icon-right {
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+  }
+
+  &--access-public {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: unset;
+
+    @include screenLg {
+      height: 718px;
+      background-image: url("data:image/svg+xml,%3Csvg width='1440' height='711' viewBox='0 0 1440 711' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1206.32 364.051C1210.95 364.051 1210.95 366.411 1215.59 366.411C1220.22 366.411 1220.22 364.051 1224.86 364.051C1229.5 364.051 1229.5 366.411 1234.13 366.411C1238.77 366.411 1238.77 364.051 1243.4 364.051C1248.04 364.051 1248.04 366.411 1252.68 366.411C1257.31 366.411 1257.31 364.051 1261.95 364.051C1266.59 364.051 1266.59 366.411 1271.23 366.411C1275.87 366.411 1275.87 364.051 1280.51 364.051C1285.15 364.051 1285.15 366.411 1289.79 366.411' stroke='%2399C2F7' stroke-width='3.025' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1186.96 376.285C1191.58 376.285 1191.58 378.646 1196.2 378.646C1200.82 378.646 1200.82 376.285 1205.45 376.285C1210.07 376.285 1210.07 378.646 1214.7 378.646C1219.32 378.646 1219.32 376.285 1223.94 376.285C1228.57 376.285 1228.57 378.646 1233.19 378.646C1237.82 378.646 1237.82 376.285 1242.45 376.285C1247.07 376.285 1247.07 378.646 1251.7 378.646C1256.33 378.646 1256.33 376.285 1260.95 376.285C1265.58 376.285 1265.58 378.646 1270.21 378.646' stroke='%2399C2F7' stroke-width='3.025' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1170.82 351.82C1175.46 351.82 1175.46 354.181 1180.09 354.181C1184.73 354.181 1184.73 351.82 1189.36 351.82C1194 351.82 1194 354.181 1198.63 354.181C1203.27 354.181 1203.27 351.82 1207.9 351.82C1212.54 351.82 1212.54 354.181 1217.18 354.181C1221.82 354.181 1221.82 351.82 1226.46 351.82C1231.09 351.82 1231.09 354.181 1235.73 354.181C1240.37 354.181 1240.37 351.82 1245.01 351.82C1249.65 351.82 1249.65 354.181 1254.29 354.181' stroke='%2399C2F7' stroke-width='3.025' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M178 270L157 282L176 289.5L178 270Z' fill='%2399C2F7'/%3E%3Cpath d='M227.737 322L238 328.857L225 334L227.737 322Z' fill='%2380D39F'/%3E%3Cpath d='M300.248 490.322C300.248 489.527 299.604 488.883 298.809 488.883H251.439C250.644 488.883 250 489.527 250 490.322C250 491.117 250.644 491.761 251.439 491.761H298.809C299.604 491.761 300.248 491.117 300.248 490.322Z' fill='%231A2551'/%3E%3Cpath d='M316.752 481.066C316.752 480.271 316.108 479.627 315.313 479.627H267.943C267.148 479.627 266.504 480.271 266.504 481.066C266.504 481.861 267.148 482.505 267.943 482.505H315.313C316.108 482.505 316.752 481.861 316.752 481.066Z' fill='%231A2551'/%3E%3Cpath d='M1202.87 194.055L1217.82 193.95L1209.94 203.828L1202.87 194.055Z' fill='%2399C2F7'/%3E%3Cpath d='M1122 473C1122.11 481 1109.89 481 1110 473C1109.89 465 1122.11 465 1122 473Z' fill='%23F7D694'/%3E%3C/svg%3E%0A");
+      background-position: -50px -110px;
+    }
+  }
+}

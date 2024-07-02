@@ -1,0 +1,24 @@
+.h-card-dotted {
+  @extend %card-helper;
+  background-color: var(--white);
+  border: 1px solid var(--gray-dark);
+  box-shadow: 8px 8px 2px 1px rgb(153, 194, 247, 0.8);
+  max-height: 545px;
+  padding: 0;
+
+  &__divider {
+    border-bottom: 1px dashed var(--gray-dark);
+  }
+
+  &__link {
+    color: var(--blue);
+    font-weight: 600;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.h-text {
+  &-primary {
+    color: var(--text);
+  }
+
+  &-seconadry {
+    color: var(--text-soft);
+  }
+
+  &-blue {
+    color: var(--blue);
+  }
+}

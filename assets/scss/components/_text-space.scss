@@ -1,0 +1,25 @@
+.h-text-space {
+	overflow: hidden;
+	text-align: center;
+
+	&::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  &::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+}
+
+.h-text-space::before,
+.h-text-space::after {
+	background-color: var(--gray-dark);
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}

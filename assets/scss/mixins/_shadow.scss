@@ -1,0 +1,26 @@
+$boxShadows: (
+  1: (
+    0px 6px 24px rgba(223.1, 229.74, 235.88, 0.24),
+  ),
+  2: (
+    0px 3px 16px rgba(139.35, 154.1, 182.75, 0.12),
+  ),
+  3: (
+    0px 0px 2px rgba(79, 94, 113, 0.12),
+  ),
+  4: (
+    0px 24px 60px 3px rgba(139.35, 151.5, 182.75, 0.08),
+  ),
+);
+
+@mixin shadow-variable($module) {
+  @each $name, $map in $module {
+    .h-shadow-#{$name} {
+      -webkit-box-shadow: $map;
+      -moz-box-shadow: $map;
+      box-shadow: $map;
+    }
+  }
+}
+
+@include shadow-variable($boxShadows);

@@ -1,0 +1,95 @@
+.h-card {
+  @extend %card-helper;
+  background: var(--white);
+  border: 1px solid var(--gray-dark);
+  box-shadow: 8px 8px 2px 1px rgb(153, 194, 247, 0.8);
+
+  &__icon {
+    align-items: center;
+    background-color: var(--soft);
+    border-radius: 0.875rem;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+
+    &-inner {
+      align-items: center;
+      background-color: var(--blue);
+      border-radius: 0.5rem;
+      display: flex;
+      height: 38px;
+      justify-content: center;
+      padding: 1rem;
+      position: relative;
+      width: 34px;
+
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.450101 15.5499C0.21568 15.3155 0.0839844 14.9975 0.0839844 14.666C0.0839844 14.3345 0.21568 14.0166 0.450101 13.7821C0.684521 13.5477 1.00246 13.416 1.33398 13.416H14.6673C14.9988 13.416 15.3168 13.5477 15.5512 13.7821C15.7856 14.0166 15.9173 14.3345 15.9173 14.666C15.9173 14.9975 15.7856 15.3155 15.5512 15.5499C15.3168 15.7843 14.9988 15.916 14.6673 15.916H1.33398C1.00246 15.916 0.684521 15.7843 0.450101 15.5499Z' fill='white'/%3E%3Cpath d='M0.450101 8.88323C0.21568 8.64881 0.0839844 8.33087 0.0839844 7.99935C0.0839844 7.66783 0.21568 7.34989 0.450101 7.11547C0.684521 6.88105 1.00246 6.74935 1.33398 6.74935H14.6673C14.9988 6.74935 15.3168 6.88105 15.5512 7.11547C15.7856 7.34989 15.9173 7.66783 15.9173 7.99935C15.9173 8.33087 15.7856 8.64881 15.5512 8.88323C15.3168 9.11765 14.9988 9.24935 14.6673 9.24935H1.33398C1.00246 9.24935 0.684521 9.11765 0.450101 8.88323Z' fill='white'/%3E%3Cpath d='M0.450101 2.21657C0.684521 2.45099 1.00246 2.58268 1.33398 2.58268H6.33398C6.6655 2.58268 6.98345 2.45099 7.21787 2.21657C7.45229 1.98215 7.58398 1.6642 7.58398 1.33268C7.58398 1.00116 7.45229 0.68322 7.21787 0.448799C6.98345 0.214378 6.6655 0.0826836 6.33398 0.0826836H1.33398C1.00246 0.0826836 0.684521 0.214378 0.450101 0.448799C0.21568 0.68322 0.0839844 1.00116 0.0839844 1.33268C0.0839844 1.6642 0.21568 1.98215 0.450101 2.21657Z' fill='white'/%3E%3C/svg%3E%0A");
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    &--green {
+      color: var(--green);
+    }
+
+    &--maroon {
+      color: var(--maroon);
+    }
+
+    &--navy {
+      color: var(--navy);
+    }
+
+    &--brown {
+      color: var(--brown);
+    }
+
+    &--purple {
+      color: var(--purple);
+    }
+
+    &--pink {
+      color: var(--pink);
+    }
+
+    &--ivory {
+      color: var(--ivory);
+    }
+
+    &--grayscale {
+      filter: grayscale(0.85);
+      opacity: 0.7;
+    }
+  }
+
+  &__border {
+    &--left {
+      border: 1px solid var(--gray);
+      height: 48px;
+    }
+
+    &--right {
+      border-right: 1px solid var(--gray);
+      height: 48px;
+    }
+  }
+
+  &--slider {
+    height: auto;
+    width: 95%;
+
+    @include screenLg {
+      height: 170px;
+    }
+  }
+
+  &--soft {
+    border: 1px solid var(--blue);
+    border-radius: 0.75rem;
+    background-color: var(--soft);
+    padding: 0.75rem;
+  }
+}

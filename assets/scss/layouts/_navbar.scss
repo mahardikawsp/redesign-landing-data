@@ -1,0 +1,38 @@
+.h-navbar {
+  background-color: var(--soft);
+
+  &__link {
+    color: var(--gray-darker);
+    display: inline-block;
+
+    &:hover {
+      color: var(--text);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: var(--text);
+      transition: width .3s;
+    }
+
+    &.active {
+      color: var(--text);
+      font-weight: 700;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
